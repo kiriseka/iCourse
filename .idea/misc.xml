@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/Pemesanan-Travel-master/TravelApps/app/src/main/res/drawable/bg_home_curve.xml" value="0.2890625" />
+        <entry key="..\:/Android Studio/Pemesanan-Travel-master/TravelApps/app/src/main/res/layout/activity_book_kereta.xml" value="0.20572916666666666" />
+        <entry key="..\:/Android Studio/Pemesanan-Travel-master/TravelApps/app/src/main/res/layout/activity_history.xml" value="0.17572463768115942" />
+        <entry key="..\:/Android Studio/Pemesanan-Travel-master/TravelApps/app/src/main/res/layout/activity_login.xml" value="0.1956521739130435" />
+        <entry key="..\:/Android Studio/Pemesanan-Travel-master/TravelApps/app/src/main/res/layout/activity_main.xml" value="0.1956521739130435" />
+        <entry key="..\:/Android Studio/Pemesanan-Travel-master/TravelApps/app/src/main/res/layout/activity_profile.xml" value="0.2269021739130435" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

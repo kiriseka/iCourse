@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../Gdrive/Codingan Pribadi/Program Java/ChatingApps/.gradle/caches/transforms-2/files-2.1/bac69347f5f7d0400a3ddb0f621f8a4f/lifecycle-viewmodel-2.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Gdrive/Codingan Pribadi/Program Java/ChatingApps/.gradle/caches/transforms-2/files-2.1/384d88a73e203b8300027f46f36e4e61/lifecycle-viewmodel-2.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-2/files-2.1/384d88a73e203b8300027f46f36e4e61/lifecycle-viewmodel-2.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-3/0dc6dc78734c4020dab75f9829870687/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-3/0dc6dc78734c4020dab75f9829870687/transformed/lifecycle-viewmodel-2.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-3/0dc6dc78734c4020dab75f9829870687/transformed/lifecycle-viewmodel-2.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../food-app-main3/gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.1.0/bfd86b9887c2343516f82bed91acbab34a45841d/lifecycle-viewmodel-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

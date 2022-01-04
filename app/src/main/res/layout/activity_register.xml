@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F7FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp"
+            android:elevation="5dp"
+            android:text="iCourse"
+            android:textColor="@android:color/black"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sv"
+            android:layout_below="@+id/tvDesc"
+            android:layout_alignStart="@+id/tvDesc"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="-8dp"
+            android:elevation="5dp"
+            android:text="Login to your Account"
+            android:textColor="@android:color/black"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/daftar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLogin"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Nama"
+                android:textColor="#4A5568"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/txt_login"
+                app:layout_constraintTop_toTopOf="@+id/txt_login" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <EditText
+                    android:id="@+id/reg_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="     Masukkan Nama"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="#4A5568"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/txt_login"
+                app:layout_constraintTop_toTopOf="@+id/txt_login" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLoginUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="     Masukkan Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Password"
+                android:textColor="#4A5568"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/txt_login"
+                app:layout_constraintTop_toTopOf="@+id/txt_login" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLoginPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/reg_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="     Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ke_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daftar_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="136dp"
+            android:background="@android:color/transparent"
+            android:text="@string/after_register"
+            android:textAllCaps="false"
+            android:textColor="#92A7AB"
+            android:textSize="12sp"
+            app:cornerRadius="50dp" />
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="85dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="Register"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="50dp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

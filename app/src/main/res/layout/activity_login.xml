@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F7FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp"
+            android:elevation="5dp"
+            android:text="iCourse"
+            android:textColor="@android:color/black"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sv"
+            android:layout_below="@+id/tvDesc"
+            android:layout_alignStart="@+id/tvDesc"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="-8dp"
+            android:elevation="5dp"
+            android:text="Login to your Account"
+            android:textColor="@android:color/black"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ke_daftar"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/masuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="50dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLogin"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Email"
+                android:textColor="#4A5568"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="@+id/txt_login"
+                app:layout_constraintTop_toTopOf="@+id/txt_login"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLoginUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="  ahmad.jaya.jaya.jaya@gmail.com"
+                    android:textColorHint="@drawable/selector"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textColor="#4A5568"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="@+id/txt_login"
+                app:layout_constraintTop_toTopOf="@+id/txt_login"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLoginPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="   **********"
+                    android:textColorHint="@drawable/selector"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ke_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/transparent"
+            android:text="@string/button_not_register"
+            android:textAllCaps="false"
+            android:textColor="#92A7AB"
+            android:textSize="12sp"
+            app:cornerRadius="50dp" />
+
+        <FrameLayout
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:strokeColor="@color/colorPrimaryDark"
+                    app:strokeWidth="2dp">
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

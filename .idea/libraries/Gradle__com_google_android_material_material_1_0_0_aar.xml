@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.material:material:1.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-3/c432983f99d57688339ccc3d7b727d47/transformed/material-1.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-3/c432983f99d57688339ccc3d7b727d47/transformed/material-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-3/c432983f99d57688339ccc3d7b727d47/transformed/material-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../food-app-main3/gradle/caches/transforms-3/c432983f99d57688339ccc3d7b727d47/transformed/material-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
