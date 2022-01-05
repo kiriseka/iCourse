@@ -12,7 +12,10 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name="com.pam.icourse.activity.MainActivity"
+            android:name=".activity.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,23 +24,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pam.icourse.activity.LoginActivity"
+            android:name=".activity.LoginActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.pam.icourse.activity.RegisterActivity"
+            android:name=".activity.RegisterActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.pam.icourse.activity.ProfileActivity"
+            android:name=".activity.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pam.icourse.activity.HistoryActivity"
+            android:name=".activity.HistoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pam.icourse.activity.BookKeretaActivity"
+            android:name=".activity.BookKeretaActivity"
             android:screenOrientation="portrait" />
     </application>
 

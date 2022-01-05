@@ -59,7 +59,7 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/judul"
+                        android:id="@+id/update_judul"
                         android:layout_width="match_parent"
                         android:layout_height="50dp" />
 
@@ -73,7 +73,7 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/level"
+                        android:id="@+id/update_level"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1" />
@@ -109,7 +109,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/tanggal_berangkat"
+                        android:id="@+id/update_tanggal_berangkat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/ic_date"
@@ -159,7 +159,7 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/kelas"
+                        android:id="@+id/update_kelas"
                         android:layout_width="match_parent"
                         android:layout_height="50dp" />
 
@@ -172,7 +172,7 @@
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:id="@+id/jam"
+                        android:id="@+id/update_jam"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginBottom="8dp" />
@@ -182,7 +182,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/book"
+                android:id="@+id/update"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="24dp"
