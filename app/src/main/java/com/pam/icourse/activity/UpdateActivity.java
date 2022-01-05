@@ -153,10 +153,6 @@ public class UpdateActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     try {
-                                        ContentValues cv = new ContentValues();
-                                        cv.put("judul","Web");
-//                                        cv.put("Field2","19");
-//                                        db.update("TB_BOOK", cv, "_id = ?", new String[]{id});
 
                                         db.execSQL("UPDATE TB_BOOK SET judul = '" +sJudul +"',"+
                                                 " level = '" +sLevel +"',"+
