@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.azhar.icourse">
+    package="com.pam.icourse">
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name="com.azhar.icourse.activity.MainActivity"
+            android:name="com.pam.icourse.activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,23 +21,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.azhar.icourse.activity.LoginActivity"
+            android:name="com.pam.icourse.activity.LoginActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.azhar.icourse.activity.RegisterActivity"
+            android:name="com.pam.icourse.activity.RegisterActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.azhar.icourse.activity.ProfileActivity"
+            android:name="com.pam.icourse.activity.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.azhar.icourse.activity.HistoryActivity"
+            android:name="com.pam.icourse.activity.HistoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.azhar.icourse.activity.BookKeretaActivity"
+            android:name="com.pam.icourse.activity.BookKeretaActivity"
             android:screenOrientation="portrait" />
     </application>
 
