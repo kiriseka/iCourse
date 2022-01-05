@@ -24,7 +24,7 @@ import com.pam.icourse.session.SessionManager;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class HistoryActivity extends AppCompatActivity {
+public class KelasActivity extends AppCompatActivity {
 
     protected Cursor cursor;
     DatabaseHelper dbHelper;
@@ -37,7 +37,7 @@ public class HistoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_history);
+        setContentView(R.layout.activity_kelas);
 
         dbHelper = new DatabaseHelper(this);
         db = dbHelper.getReadableDatabase();
@@ -100,7 +100,7 @@ public class HistoryActivity extends AppCompatActivity {
 //                startActivity(intent);
 
                 final CharSequence[] dialogitem = {"Hapus Data","Update Data"};
-                AlertDialog.Builder builder = new AlertDialog.Builder(HistoryActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(KelasActivity.this);
                 builder.setTitle("Pilihan");
                 builder.setItems(dialogitem, new DialogInterface.OnClickListener() {
                     @Override

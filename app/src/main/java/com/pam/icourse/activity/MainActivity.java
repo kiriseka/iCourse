@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void myCourseMenu(View v) {
-        Intent i = new Intent(this, HistoryActivity.class);
+        Intent i = new Intent(this, KelasActivity.class);
         startActivity(i);
     }
 
     public void courseMenu(View v) {
-        Intent i = new Intent(this, BookKeretaActivity.class);
+        Intent i = new Intent(this, AmbilKelasActivity.class);
         startActivity(i);
     }
 

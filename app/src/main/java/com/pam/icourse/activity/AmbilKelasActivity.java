@@ -27,7 +27,7 @@ import com.pam.icourse.session.SessionManager;
 import java.util.Calendar;
 import java.util.HashMap;
 
-public class BookKeretaActivity extends AppCompatActivity {
+public class AmbilKelasActivity extends AppCompatActivity {
 
     protected Cursor cursor;
     DatabaseHelper dbHelper;
@@ -47,9 +47,9 @@ public class BookKeretaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book_kereta);
+        setContentView(R.layout.activity_ambil_kelas);
 
-        dbHelper = new DatabaseHelper(BookKeretaActivity.this);
+        dbHelper = new DatabaseHelper(AmbilKelasActivity.this);
         db = dbHelper.getReadableDatabase();
 
         final String[] judul = {"Android", "Web", "Machine Learning", "Cloud", "Sql"};
@@ -141,7 +141,7 @@ public class BookKeretaActivity extends AppCompatActivity {
             public void onClick(View v) {
 //                perhitunganHarga();
                 if (sJudul != null && sLevel != null && sTanggal != null && sKelas != null) {
-                    AlertDialog dialog = new AlertDialog.Builder(BookKeretaActivity.this)
+                    AlertDialog dialog = new AlertDialog.Builder(AmbilKelasActivity.this)
                                 .setTitle("Anda yakin ingin masuk kelas ini?")
                                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                                     @Override
@@ -165,10 +165,10 @@ public class BookKeretaActivity extends AppCompatActivity {
                                                     hargaTotalDewasa + "','" +
                                                     hargaTotalAnak + "','" +
                                                     hargaTotal + "');");
-                                            Toast.makeText(BookKeretaActivity.this, "Gabung kelas berhasil", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(AmbilKelasActivity.this, "Gabung kelas berhasil", Toast.LENGTH_LONG).show();
                                             finish();
                                         } catch (Exception e) {
-                                            Toast.makeText(BookKeretaActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+                                            Toast.makeText(AmbilKelasActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
                                         }
                                     }
                                 })
@@ -177,7 +177,7 @@ public class BookKeretaActivity extends AppCompatActivity {
                         dialog.show();
 
                 } else {
-                    Toast.makeText(BookKeretaActivity.this, "Mohon isi tanggal mulai !", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AmbilKelasActivity.this, "Mohon isi tanggal mulai !", Toast.LENGTH_LONG).show();
                 }
             }
         });

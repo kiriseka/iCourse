@@ -37,10 +37,10 @@
             android:name=".activity.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.HistoryActivity"
+            android:name=".activity.KelasActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.BookKeretaActivity"
+            android:name=".activity.AmbilKelasActivity"
             android:screenOrientation="portrait" />
     </application>
 

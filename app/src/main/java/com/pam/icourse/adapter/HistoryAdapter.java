@@ -26,7 +26,7 @@ public class HistoryAdapter extends ArrayAdapter<HistoryModel> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item_booking, parent, false);
+                    R.layout.list_item_kelas, parent, false);
         }
 
         HistoryModel current = getItem(position);
